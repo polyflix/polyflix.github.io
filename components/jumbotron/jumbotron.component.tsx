@@ -1,20 +1,33 @@
 import Image from "next/image";
+import { Button } from "../button/button.component";
+import { Dots } from "../dots/dots.components";
+import { GradientText } from "../gradiant-text/gradiant-text.component";
 
 export const Jumbotron = () => {
   return (
-    <section className="bg-white h-screen flex items-center justify-center px-4">
-      <div className="relative max-w-5xl w-full h-2/3 flex flex-col align-center justify-center p-2 z-10">
-        <h1
-          className="title text-7xl text-center relative max-w-content sm:text-left sm:text-8xl md:text-9xl font-bold text-black
-          hover:after:content-[''] after:absolute after:-z-10 after:w-full after:h-1/3 after:bottom-0 after:left-0 after:bg-poly-red after:transition-all after:duration-300
-          before:content-[attr(data-content)] before:absolute before:z-10 before:w-full before:h-full before:top-0 before:left-0 before:text-black before:transition-all before:duration-300
-          "
-        >
-          Polyflix,
-        </h1>
-        <h1 className="text-6xl text-center sm:text-left sm:text-7xl md:text-8xl font-bold text-black">
-          Study with <span className="text-poly-red">simplicity.</span>
-        </h1>
+    <section className="pt-[200px] md:pt-0 max-h-[1000px] min-h-[600px] h-[80vh] flex flex-col md:flex-row items-center justify-center px-4 gap-16 max-w-6xl m-auto">
+      <div className="w-full md:w-7/12">
+        <div className="text-center md:text-left">
+          <GradientText as="h1" className="text-5xl font-bold ">
+            Study with simplicity.
+          </GradientText>
+          <h1 className="text-xl mt-4 font-light">
+            Upload your video courses, Create quizz, course list in the same app
+          </h1>
+        </div>
+        <div className="flex justify-center item-center md:justify-start gap-4">
+          <Button className="mt-4 md:mt-6">See webapp 🚀</Button>
+          <Button type="icon" className="mt-4 md:mt-6">
+            🦊
+          </Button>
+        </div>
+      </div>
+      <div className="w-full md:w-5/12 aspect-video rounded-md relative">
+        <video
+          src="#"
+          className="bg-black w-full h-full rounded-md relative z-20"
+        ></video>
+        <Dots className="absolute -left-5 -bottom-5 z-10 w-1/2 h-1/2" />
       </div>
     </section>
   );
