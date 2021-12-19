@@ -12,6 +12,8 @@ body {
   line-height: 1.6;
   font-size: 18px;
   position: relative;
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
 }
 
 body::after {

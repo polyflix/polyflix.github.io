@@ -1,7 +1,8 @@
-import Image from "next/image";
 import { Button } from "../button/button.component";
 import { Dots } from "../dots/dots.components";
 import { GradientText } from "../gradiant-text/gradiant-text.component";
+import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 export const Jumbotron = () => {
   return (
@@ -12,13 +13,32 @@ export const Jumbotron = () => {
             Study with simplicity.
           </GradientText>
           <h1 className="text-xl mt-4 font-light">
-            Upload your video courses, Create quizz, course list in the same app
+            Upload your video courses, create quizzes and courses all in the
+            same app.
           </h1>
         </div>
         <div className="flex justify-center item-center md:justify-start gap-4">
-          <Button className="mt-4 md:mt-6">See webapp 🚀</Button>
-          <Button type="icon" className="mt-4 md:mt-6">
-            🦊
+          <Button
+            as="a"
+            href="https://polyflix.dopolytech.fr/"
+            rel="noopener"
+            target="_blank"
+            className="mt-4 md:mt-6"
+          >
+            See webapp 🚀
+          </Button>
+          <Button
+            as="a"
+            type="icon"
+            className="mt-4 md:mt-6"
+            href="https://gitlab.polytech.umontpellier.fr/polyflix-do"
+            rel="noopener"
+            target="_blank"
+          >
+            <Icon
+              icon="ant-design:gitlab-outlined"
+              style={{ fontSize: "24px" }}
+            />
           </Button>
         </div>
       </div>
