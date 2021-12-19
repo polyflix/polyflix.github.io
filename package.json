@@ -8,9 +8,8 @@
     "fix": "npm-run-all fix:*",
     "fix:lint": "next lint --fix",
     "fix:prettier": "prettier --write .",
-    "lint": "npm-run-all fix:*",
-    "lint:lint": "next lint",
-    "lint:prettier": "prettier --check ."
+    "lint": "next lint",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",

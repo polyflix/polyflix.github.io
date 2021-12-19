@@ -1,0 +1,4 @@
+include:
+  - project: 'polyflix-do/ci-templates'
+    ref: main
+    file: '/showcase.yml'
