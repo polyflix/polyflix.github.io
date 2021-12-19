@@ -3,3 +3,4 @@ node_modules
 public
 .next
 .gitlab-ci.yml
+next.config.js
