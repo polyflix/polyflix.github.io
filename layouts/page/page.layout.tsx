@@ -14,11 +14,36 @@ export const PageLayout = ({
   return (
     <>
       <Head>
-        <title>{seo.title}</title>
-        {seo.description && (
-          <meta name="description" content={seo.description}></meta>
+        <title>{seo.name}</title>
+        {seo.title && (
+          <>
+            <meta name="title" content={seo.title}></meta>
+            <meta name="og:title" content={seo.title}></meta>
+            <meta name="twitter:title" content={seo.title}></meta>
+          </>
         )}
-        {seo.image && <meta name="og:image" content={seo.image}></meta>}
+        {seo.description && (
+          <>
+            <meta name="description" content={seo.description}></meta>
+            <meta property="og:description" content={seo.description}></meta>
+            <meta
+              property="twitter:description"
+              content={seo.description}
+            ></meta>
+          </>
+        )}
+        {seo.image && (
+          <>
+            <meta name="og:image" content={seo.image}></meta>
+            <meta property="og:image" content={seo.image}></meta>
+            <meta property="twitter:image" content={seo.image}></meta>
+          </>
+        )}
+
+        <meta property="og:type" content="website"></meta>
+        <meta property="twitter:card" content="summary_large_image"></meta>
+        <meta property="og:url" content={window.location.href}></meta>
+        <meta property="twitter:url" content={window.location.href}></meta>
       </Head>
       <section>{children}</section>
     </>

@@ -25,7 +25,10 @@ export const Features = () => {
     },
   ];
   return (
-    <section className="flex flex-col justify-center p-4 max-w-7xl m-auto mb-52">
+    <section
+      id="features"
+      className="flex flex-col justify-center p-4 max-w-7xl m-auto mb-52"
+    >
       <h2 className="text-2xl mb-8 max-w-content relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-12 after:bg-gradient-to-r after:from-poly-red/40 after:to-poly-red after:rounded">
         Features
       </h2>

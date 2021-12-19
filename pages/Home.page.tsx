@@ -9,7 +9,10 @@ const Home: NextPage = () => {
     <>
       <PageLayout
         seo={{
-          title: "Polyflix",
+          name: "Polyflix",
+          title: "Study with simplicity.",
+          description:
+            "Upload your video courses, create quizzes and courses all in the same app.",
         }}
       >
         <Jumbotron />

@@ -1,6 +1,8 @@
+import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { createRef, useEffect } from "react";
 import { Button } from "../button/button.component";
+import { Logo } from "../logo/logo.component";
 
 interface Item {
   label: string;
@@ -18,8 +20,8 @@ export const Header = () => {
 
   const items: Items = [
     {
-      label: "Polyflix",
-      route: "/",
+      label: "Features",
+      route: "/#features",
     },
     {
       label: "Description",
@@ -41,12 +43,14 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 px-4 pt-4">
+    <header className="fixed top-0 left-0 w-full z-50 px-4 pt-4 flex justify-center">
       <nav
-        className="h-16 flex w-full justify-center transition duration-200 ease-out rounded-md"
+        className="h-16 flex w-full justify-center items-center transition duration-200 ease-out rounded-md max-w-6xl px-4"
         ref={navBarRef}
       >
-        <ul className="flex justify-center md:justify-end items-center h-full w-full max-w-6xl">
+        <Logo />
+        <span className="flex grow"></span>
+        <ul className="flex justify-center md:justify-end items-center h-full w-full">
           {items.map((item: Item, i: number) => (
             <li key={i} className="mx-2">
               <Link href={item.route} passHref={true}>
@@ -56,6 +60,20 @@ export const Header = () => {
               </Link>
             </li>
           ))}
+          <li>
+            <Button
+              type="icon"
+              as="a"
+              href="https://gitlab.polytech.umontpellier.fr/polyflix-do"
+              rel="noopener"
+              target="_blank"
+            >
+              <Icon
+                icon="ant-design:gitlab-outlined"
+                style={{ fontSize: "20px" }}
+              />
+            </Button>
+          </li>
         </ul>
       </nav>
     </header>

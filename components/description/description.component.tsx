@@ -3,13 +3,13 @@ import { GradientText } from "../gradiant-text/gradiant-text.component";
 
 export const Description = () => {
   return (
-    <section className="min-h-[500px] flex flex-col items-center justify-center mx-2 sm:mx-8">
+    <section
+      id="description"
+      className="min-h-[500px] flex flex-col items-center justify-center mx-2 sm:mx-8"
+    >
       <div className="relative w-full">
         <div className="py-16 px-8 max-w-5xl mx-auto relative z-10 bg-white rounded-md">
-          <GradientText
-            as="h2"
-            className="text-2xl text-center font-medium mb-8 font-bold"
-          >
+          <GradientText as="h2" className="text-2xl text-center mb-8 font-bold">
             Polyflix
           </GradientText>
           <p className="text-lg text-center">

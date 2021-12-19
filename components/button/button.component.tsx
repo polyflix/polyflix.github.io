@@ -1,13 +1,14 @@
 import { ElementType, PropsWithChildren } from "react";
 import cn from "classnames";
+import { PropsOf } from "../../shared/types/props-of.type";
 
-type ButtonProps<T extends ElementType> = {
+type ButtonProps<T extends ElementType> = PropsOf<T> & {
   as?: T;
   className?: string;
   type?: "flat" | "stroked" | "link" | "icon";
 };
 
-export const Button = <T extends ElementType = "button">({
+export const Button = <T extends ElementType = "a">({
   as,
   children,
   className,
@@ -41,7 +42,7 @@ export const Button = <T extends ElementType = "button">({
     case "icon":
       rootStyles += cn(
         rootStyles,
-        "bg-poly-red/20 transition ease duration-300 hover:bg-poly-red/90 rounded-full px-2"
+        "block bg-poly-red/50 transition ease duration-300 hover:bg-poly-red/90 rounded-full px-2"
       );
       break;
   }
