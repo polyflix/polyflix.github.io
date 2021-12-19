@@ -42,8 +42,6 @@ export const PageLayout = ({
 
         <meta property="og:type" content="website"></meta>
         <meta property="twitter:card" content="summary_large_image"></meta>
-        <meta property="og:url" content={window.location.href}></meta>
-        <meta property="twitter:url" content={window.location.href}></meta>
       </Head>
       <section>{children}</section>
     </>
