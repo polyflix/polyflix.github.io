@@ -6,10 +6,10 @@ import Link from "next/link";
 
 export const Jumbotron = () => {
   return (
-    <section className="pt-[200px] md:pt-0 max-h-[1000px] min-h-[600px] h-[80vh] flex flex-col md:flex-row items-center justify-center px-4 gap-16 max-w-6xl m-auto">
+    <section className="pt-[200px] md:pt-0 min-h-[80vh] flex flex-col md:flex-row items-center justify-center px-4 gap-16 max-w-6xl m-auto">
       <div className="w-full md:w-7/12">
         <div className="text-center md:text-left">
-          <GradientText as="h1" className="text-5xl font-bold ">
+          <GradientText as="h1" className="text-5xl font-black">
             Study with simplicity.
           </GradientText>
           <h1 className="text-xl mt-4 font-light">
