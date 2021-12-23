@@ -33,10 +33,7 @@ export const Sidebar = () => {
                   type="icon"
                   onClick={() => toggle()}
                 >
-                  <Icon
-                    icon="ant-design:menu-outlined"
-                    style={{ fontSize: "20px" }}
-                  />
+                  <Icon icon="eva:close-outline" style={{ fontSize: "20px" }} />
                 </Button>
               </div>
               <div className="p-2 h-full flex justify-center items-center">
