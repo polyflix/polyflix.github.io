@@ -1,6 +1,6 @@
 import { Button } from "../button/button.component";
 import { Dots } from "../dots/dots.components";
-import { GradientText } from "../gradiant-text/gradiant-text.component";
+import { GradientTitle } from "../gradiant-title/gradiant-title.component";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 
@@ -9,9 +9,9 @@ export const Jumbotron = () => {
     <section className="pt-[200px] md:pt-0 min-h-[80vh] flex flex-col md:flex-row items-center justify-center px-4 gap-16 max-w-6xl m-auto">
       <div className="w-full md:w-7/12">
         <div className="text-center md:text-left">
-          <GradientText as="h1" className="text-5xl font-black">
+          <GradientTitle as="h1" className="text-5xl font-black">
             Study with simplicity.
-          </GradientText>
+          </GradientTitle>
           <h1 className="text-xl mt-4 font-light">
             Upload your video courses, create quizzes and courses all in the
             same app.

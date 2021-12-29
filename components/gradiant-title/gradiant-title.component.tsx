@@ -6,7 +6,7 @@ type ButtonProps<T extends ElementType> = {
   className?: string;
 };
 
-export const GradientText = <T extends ElementType = "h2">({
+export const GradientTitle = <T extends ElementType = "h2">({
   as,
   children,
   className,
