@@ -7,27 +7,27 @@ import { UnderlineTitle } from "../underline-title/underline-title";
 export const Showcase = () => {
   const elements = [
     {
-      src: "/images/polyflix-home.png",
+      src: "./images/polyflix-home.png",
       title: "Polyflix home page",
     },
     {
-      src: "/images/polyflix-home.png",
+      src: "./images/polyflix-home.png",
       title: "Polyflix home page",
     },
     {
-      src: "/images/polyflix-home.png",
+      src: "./images/polyflix-home.png",
       title: "Polyflix home page",
     },
     {
-      src: "/images/polyflix-home.png",
+      src: "./images/polyflix-home.png",
       title: "Polyflix home page",
     },
     {
-      src: "/images/polyflix-home.png",
+      src: "./images/polyflix-home.png",
       title: "Polyflix home page",
     },
     {
-      src: "/images/polyflix-home.png",
+      src: "./images/polyflix-home.png",
       title: "Polyflix home page",
     },
   ];
