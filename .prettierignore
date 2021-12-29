@@ -4,3 +4,4 @@ public
 .next
 .gitlab-ci.yml
 next.config.js
+dist

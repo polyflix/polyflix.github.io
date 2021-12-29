@@ -1,4 +1,6 @@
 import { Feature } from "../../shared/types/feature.type";
+import { Section } from "../section/section";
+import { UnderlineTitle } from "../underline-title/underline-title";
 import { FeatureCard } from "./feature-card/feature-card.component";
 
 export const Features = () => {
@@ -25,18 +27,13 @@ export const Features = () => {
     },
   ];
   return (
-    <section
-      id="features"
-      className="flex flex-col justify-center p-4 max-w-7xl m-auto mb-52"
-    >
-      <h2 className="text-2xl mb-8 max-w-content relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-1 after:w-12 after:bg-gradient-to-r after:from-poly-red/40 after:to-poly-red after:rounded">
-        Features
-      </h2>
+    <Section id="features">
+      <UnderlineTitle>Features</UnderlineTitle>
       <div className="w-full grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {features.map((feature: Feature, i: number) => (
           <FeatureCard key={i} feature={feature} />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
