@@ -52,12 +52,12 @@ export const Header = () => {
             <Button
               type="icon"
               as="a"
-              href="https://gitlab.polytech.umontpellier.fr/polyflix-do"
+              href="https://github.com/polyflix"
               rel="noopener"
               target="_blank"
             >
               <Icon
-                icon="ant-design:gitlab-outlined"
+                icon="ant-design:github-outlined"
                 style={{ fontSize: "20px" }}
               />
             </Button>

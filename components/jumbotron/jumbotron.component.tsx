@@ -2,7 +2,6 @@ import { Button } from "../button/button.component";
 import { Dots } from "../dots/dots.components";
 import { GradientTitle } from "../gradiant-title/gradiant-title.component";
 import { Icon } from "@iconify/react";
-import Link from "next/link";
 
 export const Jumbotron = () => {
   return (
@@ -31,12 +30,12 @@ export const Jumbotron = () => {
             as="a"
             type="icon"
             className="mt-4 md:mt-6"
-            href="https://gitlab.polytech.umontpellier.fr/polyflix-do"
+            href="https://github.com/polyflix"
             rel="noopener"
             target="_blank"
           >
             <Icon
-              icon="ant-design:gitlab-outlined"
+              icon="ant-design:github-outlined"
               style={{ fontSize: "24px" }}
             />
           </Button>
